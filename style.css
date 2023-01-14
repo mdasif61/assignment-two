@@ -521,5 +521,36 @@ nav{
     .footer p{
         font-size: 16px;
     }
+    .more-sample{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin:50px auto;
+    }
+    .sample-img{
+        display: flex;
+        flex-direction: column;
+        width:70%;
+    }
+    .sample-info h1{
+        font-size: 30px;
+        text-align: center;
+    }
+    .sample-info p{
+        text-align: center;
+        font-size: 16px;
+    }
+    .sample-info{
+        width:70%;
+        align-items: center;
+    }
+    .btn-sample{
+        width:130px;
+        height: 40px;
+        font-size: 17px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin:15px auto;
+    }
 }
 
