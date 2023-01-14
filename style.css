@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Comfortaa:wght@300&family=Lobster&family=Merriweather&family=Poppins:wght@500&family=Work+Sans:wght@400;500;700&display=swap');
+
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+header{
+    width:100%;
+    background: rgba(255, 144, 14, 0.1);
+    padding: 50px 0;
+    margin:auto;
+}
+.primari-container{
+    width:85%;
+    margin:0 auto;
+}
+.header-name{
+    font-size: 45px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+}
+.manu{
+    display: flex;
+}
+.manu li{
+    list-style: none;
+    margin:0 15px;
+}
+.manu li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #424242;
+    font-weight: 500;
+}
+.banner-con{
+    margin-top:80px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner-heading{
+    font-size: 65px;
+    text-align: center;
+}
+.banner-info{
+    font-size: 16px;
+    color: #727272;
+    text-align: center;
+    margin-top:15px;
+}
+.banner-btn{
+    width:180px;
+    background-color: none;
+    height: 60px;
+    border:none;
+    outline: none;
+    background:linear-gradient(to bottom,rgb(255, 69, 69),rgb(255, 166, 0));
+    border-radius: 10px;
+    margin:40px 0;
+    font-size: 22px;
+    color:white;
+}
+.banner-btn:hover{
+    background: transparent;
+    border:3px solid orange;
+    color:orange;
+}
+.banner-img{
+    width:1450px;
+    height: 710px;
+    background-color: aqua;
+    border-radius: 8px;
+}
+.banner-img img{
+    width:100%;
+    height: 100%;
+}
+/* header-end */
+
+.all-list-1{
+    grid-area: list-1;
+    background-color: #ffc013;
+}
+.all-list-2{
+    grid-area: list-2;
+    background-color: #ffc013;
+}
+.all-list-3{
+    grid-area: list-3;
+    background-color: #ffc013;
+}
+.all-list-4{
+    grid-area: list-4;
+    background-color: #ffc013;
+}
+.all-list-5{
+    grid-area: list-5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 75px;
+}
+
+.quic-list{
+    margin:70px auto;
+    width:85%;
+    display: grid;
+    grid-gap: 24px;
+    grid-template-columns: 350px 350px 700px;
+    grid-template-rows: repeat(2,350px);
+    grid-template-areas:
+    "list-1 list-2 list-5"
+    "list-3 list-4 list-5";
+}
+.team{
+    border-radius: 8px;
+}
+.team img{
+    width:100%;
+    height: 100%;
+}
+.list-heading{
+    font-size: 45px;
+}
+.list-info{
+    font-size: 16px;
+    margin:30px 0;
+    color: #727272;
+    line-height: 28px;
+}
+.nxt-btn{
+    margin-top:10px;
+}
+/* quic-list end */
+
+.feature-con{
+    display: flex;
+    gap:120px;
+    margin-top:120px;
+    width:90%;
+    margin:120px auto;
+}
+.feature-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.feature-heading{
+    font-size: 20px;
+}
+.feature-desc{
+    font-size: 16px;
+    line-height: 27px;
+    margin-top:15px;
+    color: #727272;
+}
+.space{
+    margin-left: 30px;
+}
+.top{
+
+}
+.top-heading{
+    font-size: 45px;
+    border-left: 5px solid #FF900E;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+.top-info{
+    font-size: 17px;
+    line-height: 25px;
+}
+.feature-img{
+    position: relative;
+}
+.child{
+    position: absolute;
+    bottom:-60px;
+    left: -60px;
+    width:340px;
+    height: 190px;
+    background: #FF900E;
+    border-radius: 10px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.child h1{
+    font-size: 65px;
+    text-align: center;
+    color:white;
+}
+.child p{
+    font-size: 25px;
+    color:white;
+    text-align: center;
+}
+/* fearture end */
+.middle-taxt{
+    width:90%;
+    margin:180px auto;
+}
+.middle-taxt h1{
+    font-size: 45px;
+}
+.middle-taxt p{
+    color: #727272;
+    font-size: 17px;
+    margin-top: 15px;
+}
+/* middle-text end */
+
+.projects{
+    display: flex;
+    width:90%;
+    justify-content: space-around;
+    margin:30px auto;
+}
+.all-project{
+    width:240px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 10px;
+    border:2px solid #FF900E;
+    transition: transform 0.2s linear;
+    cursor: pointer;
+}
+.all-project:hover{
+    background:linear-gradient(to bottom,transparent,rgb(253, 231, 188));
+    transform: perspective(1000px) translateY(-20px) scale(1.2);
+    box-shadow: 2px 2px 15px 5px rgba(182, 182, 182, 0.548);
+}
+.number{
+    font-size: 45px;
+    color:rgb(70, 70, 70);
+    margin:15px 0;
+}
+.title{
+    font-size: 20px;
+    color: #727272;
+    font-weight: 600;
+}
+/* projects end */
+
+.sponsored{
+    text-align: center;
+    margin-top:100px;
+}
+.sponsored h1{
+    font-size: 45px;
+}
+.sponsored p{
+    font-size: 16px;
+    color: #727272;
+    margin-top:20px;
+    line-height: 27px;
+}
+.company-logo{
+    display: flex;
+    justify-content: space-around;
+    margin-top:100px;
+    margin-bottom: 30px;
+}
+.footer{
+    background: #FFF4E7;
+    width:77%;
+    margin:100px auto;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer p{
+    font-size: 20px;
+    color: #424242;
+}
+/* responsive-layout */
+@media screen and (max-width:576px) {
+    header{
+        width:100%;
+    }
+    .primari-container{
+        width:100%;
+    }
+    nav{
+        
+        flex-direction: column;
+    }
+    .manu{
+        flex-direction: column;
+        text-align: center;
+    }
+    .manu li{
+        margin:15px 0;
+    }
+    .manu li:last-child{
+        background-color: #ffc013;
+        padding: 10px;
+        border-radius: 8px;
+    }
+    .header-name{
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    .banner-heading{
+        font-size: 30px;
+    }
+    .banner-info{
+        font-size: 15px;
+        padding: 0px 10px;
+    }
+    .banner-btn{
+        width:130px;
+        height: 40px;
+        font-size: 16px;
+        margin:30px 0;
+    }
+    .banner-img{
+        width:90%;
+        height: auto;
+        background-color: transparent;
+    }
+    .banner-img img{
+        width:100%;
+        height: 100%;
+    }
+    .quic-list{
+        width:100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .team{
+        background-color: transparent;
+        width:280px;
+        align-items: center;
+    }
+    .all-list-5{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin:0px;
+        width:90%;
+    }
+    .nxt-banner{
+        margin:10px 0;
+    }
+    .list-heading{
+        font-size: 40px;
+    }
+    .feature-con{
+        flex-direction: column;
+    }
+    .feature-info{
+        text-align: center;
+    }
+    .feature-img img{
+        width:100%;
+    }
+    .top-heading{
+        font-size:30px;
+        border:none;
+        border-bottom: 1px solid black;
+        padding: 25px 0;
+        margin-top:0px;
+    }
+    .feature-heading{
+        margin-top:25px;
+    }
+    .space{
+        margin-left: 0px;
+    }
+    .child{
+        width:150px;
+        height: 100px;
+        left: 50%;
+        top:100%;
+        transform: translate(-50%,-50%);
+    }
+    .child h1{
+        font-size: 30px;
+    }
+    .child p{
+        font-size: 18px;
+    }
+    .middle-taxt{
+        text-align: center;
+    }
+    .projects{
+        flex-direction: column;
+        align-items: center;
+        gap:30px;
+    }
+    .middle-taxt{
+        margin:80px auto;
+    }
+    .middle-taxt h1{
+        font-size: 30px;
+    }
+    .middle-taxt p{
+        font-size: 16px;
+    }
+    .sponsored{
+        margin:50px auto;
+    }
+    .sponsored h1{
+        font-size: 35px;
+    }
+    .sponsored p{
+        font-size: 15px;
+    }
+    .company-logo{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap:30px;
+        justify-items: center;
+        width:80%;
+        margin:auto;
+    }
+    .footer{
+        width:100%;
+        text-align: center;
+    }
+    .footer p{
+        font-size: 16px;
+    }
+}
+
